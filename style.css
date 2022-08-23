@@ -1,0 +1,14 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cube {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
