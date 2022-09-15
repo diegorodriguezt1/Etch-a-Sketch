@@ -32,3 +32,20 @@ function createGrid() {
 
 createGrid();
 
+function eraseGrid() {
+    const cubes = document.querySelectorAll(".cube");
+    const verticals = document.querySelectorAll(".column");
+    verticals.forEach(column => {
+        column.remove();
+    });
+    cubes.forEach(cube => {
+        cube.remove();
+    })
+}
+
+slider.addEventListener("change", () => {
+    eraseGrid();
+    createGrid();
+})
+
+
