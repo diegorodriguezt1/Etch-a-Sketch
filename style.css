@@ -1,7 +1,7 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .container {
@@ -10,13 +10,19 @@ body {
     flex-flow: row;
     width: 480px;
     height: 480px;
+    overflow: auto
 }
 
+.column {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% / var(--sliderValue)); 
+}
 .cube {
+    display: flex;
     float: left;
-    width: -webkit-fill-available;
-    height: calc(384px / 16);
+    height: calc(100% / var(--sliderValue));
     border-style: solid;
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0.075);
     background-color: white;
 }
