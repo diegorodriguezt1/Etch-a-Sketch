@@ -22,7 +22,7 @@ function createGrid() {
     }
     const cubes = document.querySelectorAll(".cube");
     cubes.forEach(cube => {
-        cube.addEventListener("mouseover", () =>
+        cube.addEventListener("click", () =>
         cube.style.backgroundColor = paint.value)
     })
     let rootElement = document.documentElement;
